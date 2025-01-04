@@ -1,6 +1,6 @@
 {
   "name": "use-user-device-details",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/useUserDeviceDetails.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,8 @@
   "license": "MIT",
   "description": "A React hook to retrieve user device details.",
   "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "keywords": [
     "react",
