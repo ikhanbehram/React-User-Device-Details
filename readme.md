@@ -18,28 +18,35 @@ Import the hook into your React component and use it to access device details.
 Example
 
 ```bash
+
 import React from 'react';
 import useUserDeviceDetails from 'use-user-device-details';
 
 const App = () => {
     const deviceDetails = useUserDeviceDetails();
+    const { os, browser, ram, cpu, userAgent, language, isMobile, onlineStatus, timezone, pixelRatio, touchSupport } = deviceDetails;
 
     return (
         <div className="app">
-            <h1>User Device Details</h1>
-            <ul>
-                <li><strong>OS:</strong> {deviceDetails.os}</li>
-                <li><strong>Browser:</strong> {deviceDetails.browser}</li>
-                <li><strong>RAM:</strong> {deviceDetails.ram} GB</li>
-                <li><strong>CPU:</strong> {deviceDetails.cpu} logical processors</li>
-                <li><strong>User Agent:</strong> {deviceDetails.userAgent}</li>
-                <li><strong>Language:</strong> {deviceDetails.language}</li>
-                <li><strong>Is Mobile:</strong> {deviceDetails.isMobile ? 'Yes' : 'No'}</li>
-                <li><strong>Online Status:</strong> {deviceDetails.onlineStatus ? 'Online' : 'Offline'}</li>
-                <li><strong>Timezone:</strong> {deviceDetails.timezone}</li>
-                <li><strong>Pixel Ratio:</strong> {deviceDetails.pixelRatio}</li>
-                <li><strong>Touch Support:</strong> {deviceDetails.touchSupport}</li>
-            </ul>
+            <header className="header">
+                <h1>User Device Details</h1>
+            </header>
+            <div className="device-details-card">
+                <h2>Device Information</h2>
+                <ul>
+                    <li><strong>Operating System:</strong> {os}</li>
+                    <li><strong>Browser:</strong> {browser}</li>
+                    <li><strong>RAM:</strong> {ram} GB</li>
+                    <li><strong>CPU:</strong> {cpu} logical processors</li>
+                    <li><strong>User Agent:</strong> {userAgent}</li>
+                    <li><strong>Language:</strong> {language}</li>
+                    <li><strong>Mobile Device:</strong> {isMobile ? 'Yes' : 'No'}</li>
+                    <li><strong>Online Status:</strong> {onlineStatus ? 'Online' : 'Offline'}</li>
+                    <li><strong>Timezone:</strong> {timezone}</li>
+                    <li><strong>Pixel Ratio:</strong> {pixelRatio}</li>
+                    <li><strong>Touch Support:</strong> {touchSupport}</li>
+                </ul>
+            </div>
         </div>
     );
 };
