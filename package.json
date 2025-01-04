@@ -1,0 +1,43 @@
+{
+  "name": "use-user-device-details",
+  "version": "1.0.0",
+  "main": "src/useUserDeviceDetails.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Behram",
+  "license": "MIT",
+  "description": "A React hook to retrieve user device details.",
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "device",
+    "details",
+    "user device",
+    "user OS",
+    "online status",
+    "battery",
+    "user battery",
+    "device battery",
+    "viewport",
+    "screen size",
+    "javascript",
+    "responsive design",
+    "utility",
+    "react hook",
+    "mobile",
+    "desktop",
+    "environment",
+    "user experience",
+    "performance",
+    "web development"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ikhanbehram/React-User-Device-Details"
+  }
+}
