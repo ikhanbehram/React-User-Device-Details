@@ -10,13 +10,14 @@ You can install the package via npm. If you're using your local project, link th
 
 ```bash
 npm install use-user-device-details
+```
 
 Usage
 Import the hook into your React component and use it to access device details.
 
 Example
 
-```
+```bash
 import React from 'react';
 import useUserDeviceDetails from 'use-user-device-details';
 
