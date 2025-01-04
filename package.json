@@ -1,5 +1,5 @@
 {
-  "name": "use-user-device-details",
+  "name": "react-user-device-details",
   "version": "1.0.2",
   "main": "src/useUserDeviceDetails.js",
   "scripts": {
